@@ -1,0 +1,257 @@
+<!--
+Author: Dikezeko da Graça Oliveira
+Projeto: IDS official website
+Date: 01/08/2019
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Admin - Candidatos à Bolsa</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- bootstrap -->
+        <link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.min.css">
+       
+        <!-- font awesome -->
+        <link rel="stylesheet" type="text/css" href="../dist/css/all.css">
+
+        <!-- style -->
+        <link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+        <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="../dist/css/skin-blue.min.css">
+        <link rel="stylesheet" href="../dist/css/datatables.min.css">
+
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../dist/img/idslogo.png">
+    </head>
+    <body>
+        <!-- Begin Menu -->
+	    <nav class="navbar navbar-dark navbar-expand-lg navbar-default fixed-top">
+            <div class="container-fluid">
+                <!-- logotype ids -->	
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../dist/img/idslogo.png">
+                </a>
+    
+                <!-- User Perfil -->
+                <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                          <!-- User Account Menu -->
+                          <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                              <!-- The user image in the navbar-->
+                              <img src="../dist/img/avatar5.png" class="user-image rounded-cicle" alt="User Image">
+                              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                              <span class="hidden-xs text-light">Fulano Junior</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <!-- The user image in the menu -->
+                              <li class="user-header">
+                                <img src="../dist/img/avatar5.png" class="user-image rounded-cicle" alt="User Image">
+                
+                                <p>
+                                  Fulano Junior - Web Developer
+                                  <small>Membro desde Abr. 2018</small>
+                                </p>
+                              </li>
+                              <!-- Menu Body -->
+                              
+                              <!-- Menu Footer-->
+                              <li class="user-footer">
+                                <div class="pull-right">
+                                  <a href="#" class="btn btn-default btn-flat">Sair</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                <!-- menu -->
+                
+            </div>
+        </nav>
+        <!-- End Menu -->
+
+        <!-- Left Menu Box-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-12 admin-menu-box-left">
+                    <p class="text-menu-admin">MENU</p>
+                    <a href="index.html"><i class="fa fa-home admin-menu-option "> Página Inicial</i></a>
+                    <a href="coordAdmin.html"><i class="fas fa-chart-pie admin-menu-option "> Coordenação</i></a> 
+                    <a href="cursosAdmin.html"><i class="fas fa-book-reader admin-menu-option "> Cursos</i></a>
+                    <a href="contatoAdmin.html"><i class="fa fa-comments admin-menu-option "> Contatos</i></a>
+                    <a href="capa.html"><i class="fa fa-home admin-menu-option "> Capa Inicial</i></a>
+                    <a href="candidatos.html"><i class="fa fa-comments admin-menu-option active-admin"> Candidatos</i></a>
+                    <a href="eventosAdmin.html"><i class="fas fa-chalkboard admin-menu-option"> Eventos</i></a>
+                    <a href="formadosAdmin.html"><i class="fa fa-graduation-cap admin-menu-option "> Formados</i></a>  
+                    <a href="usuariosAdmin.html"><i class="fa fa-users admin-menu-option "> Usuários</i></a>                                                                
+                </div>
+                <div class="col-lg-9 col-12 admin-menu-box-right">
+                      <!-- Content Wrapper. Contains page content -->
+                    <div class="content-wrapper">
+                      <!-- Content Header (Page header) -->
+                      <section class="content-header">
+                        <h1>
+                          Candidatos à Bolsa
+                        </h1>
+                        <ol class="breadcrumb">
+                          <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                          <li class="active">Candidatos</li>
+                        </ol>
+                      </section>
+
+                      <!-- Main content -->
+                      <section class="content ">
+
+                        <div class="box">
+                          <div class="box-header">
+                          </div>
+                          <!-- /.box-header -->
+                          <div class="box-body no-padding table-responsive">
+                            <table class="display table table-hover table-bordered" id="minhaTabela" style="width: 100%" >
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col">Nome</th>
+                                  <th scope="col">Curso</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">Telefone</th>
+                                  <th scope="col">Descriçao</th>
+                                  <th scope="col" style="min-width: 75px;">Ações</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Mark da silva pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Antony pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Carla da silva pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Bento da silva Garcia</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Mateus da silva Lima</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Adolfo da silva pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Elias da silva pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Garcia da silva pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Gonga da silva pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                                <tr>
+                                  <td>Oliveira da silva pedro</td>
+                                  <td>Engenharia da Computação</td>
+                                  <td>afonsodasilva@gmail.com</td>
+                                  <td>11930879350</td>
+                                  <td>Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Viva  Forevis</td>
+                                  <td><button type="button" class="btn btn-xs btn-danger btn-delete"><i class="fa fa-trash"></i> Excluir</button></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!-- /.box-body -->
+                        </div>
+
+                      </section>
+                      <!-- /.content -->
+                    </div>
+                    <!-- /.content-wrapper --> 
+                </div>
+                
+                
+            </div>
+        </div>
+        <!--End Left Menu Box-->
+        
+        <!-- footer -->
+	    <footer class="text-light text-center">
+            <p class="footer-p">Todos os direitos reservados ao IDS - Copyright © 2019</p>
+            <p class="footer-p">Desenvolvido por <a href="https://www.linkedin.com/in/dikizeko-da-gra%C3%A7a-oliveira-346998162/">Dikezeko Oliveira</a></p>
+        </footer>
+       
+        <!-- jquery and javascript -->
+        <script type="text/javascript" src="../dist/js/jquery.js"></script>
+        <script type="text/javascript" src="../dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="../dist/js/datatables.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+              $('#minhaTabela').DataTable( {
+                  "language": {
+                      "lengthMenu": "Mostrar _MENU_ candidatos por página",
+                      "zeroRecords": "Nada encontrado - Desculpa",
+                      "info": "Mostrando página _PAGE_ de _PAGES_",
+                      "infoEmpty": "Nenhum registro disponível",
+                      "infoFiltered": "(filtrado de _MAX_ total de registros)",
+                      "processing":     "Processando...",
+                      "search":         "Buscar:",
+                      "paginate": {
+                      "first":      "Primeiro",
+                      "last":       "Último",
+                      "next":       "Próximo",
+                      "previous":   "Anterior"
+                      },
+                      "infoEmpty":      "Mostrando 0 a 0 de 0 entradas",
+                  }
+              } );
+          } );
+        </script>
+    </body>
+</html>

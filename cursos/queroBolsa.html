@@ -1,0 +1,329 @@
+<!--
+Author: Dikezeko da Graça Oliveira
+Projeto: IDS official website
+Date: 01/08/2019
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Quero Bolsa de Estudos</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.min.css">
+
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="../dist/css/all.css">
+
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+
+	 <!-- favicon -->
+	 <link rel="shortcut icon" href="../dist/img/idslogo.png">
+
+</head>
+<body>
+	<!-- Begin Menu -->
+	<nav class="navbar navbar-dark navbar-expand-lg navbar-default fixed-top">
+		
+		<div class="container-fluid">
+			<!-- logotype ids -->	
+			<a class="navbar-brand" href="../index.html">
+				<img src="../dist/img/idslogo.png">
+			</a>
+
+			<!-- Menu button for smartphones -->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-expanded ="false"> <span class="navbar-toggler-icon"></span></button>	
+
+			<!-- menu -->
+			<div class="collapse navbar-collapse" id="menu">  <ul class="navbar-nav ml-md-auto text-light">
+					<li class="nav-item"> <a class="nav-link" href="../index.html">Home</a></li>
+					<li class="nav-item active"> <a class="nav-link" href="cursos.html">Cursos</a></li>
+					<li class="nav-item"> <a class="nav-link" href="../coordenacao/coordenacao.html">Coordenação</a></li>
+					<li class="nav-item"> <a class="nav-link" href="../eventos/eventos.html">Eventos</a></li>
+					<li class="nav-item"> <a class="nav-link" href="#contato">Contato</a></li>
+					<li class="nav-item"> <a class="nav-link" href="../admin/login.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Menu -->
+
+	<!-- Begin Formulary -->
+	<div class="container form-content" id="headerTop">
+		<h1 class="text-dark text-h1">Preencha seus dados pessoais verdadeiros</h1>
+		<h4 class="text-dark">Formulário de cadastramento</h4>
+		<form>
+			<div class="form-row">
+				<div class="form-group col-lg-6 col-12">
+					<label>Nome</label>
+					<input type="text" class="form-control" placeholder="Digite seu Nome">
+				</div>
+				<div class="form-group col-lg-6 col-12">
+					<label>Sobrenome</label>
+					<input type="text" class="form-control" placeholder="Digite seu Sobrenome">
+				</div>
+			</div>
+				
+			<div class="form-row">
+				<div class="form-group col-lg-6 col-12">
+					<label>Data de Nascimento</label>
+					<input type="date" name="dataNascimento" class="form-control">
+				</div>
+				<div class="form-group col-lg-6 col-12">
+					<label>Nº do Doc. de Identidade</label>
+					<input type="text" name="DocNumber" class="form-control" placeholder="Número do B.I ou Passaporte">
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-lg-6 col-12">
+					<label>Nome do Pai</label>
+					<input type="text" class="form-control" placeholder="Digite o nome completo do seu Pai">
+				</div>
+				<div class="form-group col-lg-6 col-12">
+					<label>Nome da Mãe</label>
+					<input type="text" class="form-control" placeholder="Digite o completo da sua Mãe">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Naturalidade</label>
+				<div class="form-row">
+					<div class="col-lg-6 col-12">
+						<input type="text" name="provincia" class="form-control" placeholder="Província">
+					</div>
+					<div class="col-lg-6 col-12">
+						<input type="text" name="municipio" class="form-control" placeholder="Município">
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<!--radioButton collumn 1-->
+					<div class="col-lg-4 col-12">
+						<div class="form-group">
+							<label>Como conheceu o Ids?</label>
+							<div class="radio">
+								<label for="InputFacebook">
+								<input type="radio" id="InputFacebook" value="facebook" name="knowIDs">
+								Facebook</label>
+							</div>
+							<div class="radio">
+								<label for="InputInstagram">
+								<input type="radio" id="InputInstagram" value="instagram" name="knowIDs">
+								Instagram</label>
+							</div>
+							<div class="radio">
+								<label for="InputExStudent">
+									<input type="radio" id="InputExStudent" value="ExEstudante" name="knowIDs">
+									Ex Estudante do IDS</label>
+								</div>
+								<div class="radio">
+									<label for="InputSite">
+									<input type="radio" id="InputSite" value="nossoSite" name="knowIDs">
+									Nosso Site</label>
+								</div>
+								<div class="radio">
+									<label for="InputAnother">
+									<input type="radio" id="InputAnother" value="outro" name="knowIDs">
+									Outro</label>
+								</div>
+						</div>
+					</div>
+					<!--radioButton collumn 2-->
+					<div class="col-lg-4 col-12">
+						<div class="form-group">
+							<label>Gênero</label>
+							<div class="radio">
+							  <label for="InputGenderM">
+								<input type="radio" id="InputGenderM" value="M" name="gender">
+								Masculino</label>
+							</div>
+							<div class="radio">
+							  <label for="InputGenderF">
+								<input type="radio" id="InputGenderF" value="F" name="gender">
+								Feminino</label>
+							</div>
+						  </div>
+					</div>
+					<!--radioButton collumn 3-->
+					<div class="col-lg-4 col-12">
+						<div class="form-group">
+							<label>É Ôrfão?</label>
+							<div class="radio">
+							  <label for="InputYes">
+								<input type="radio" id="InputYes" value="S" name="orfao">
+								Sim</label>
+							</div>
+							<div class="radio">
+							  <label for="InputNot">
+								<input type="radio" id="InputNot" value="N" name="orfao">
+								Não</label>
+							</div>
+						 </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-12">
+					<label>Porquê você quer uma bolsa de estudos?</label>
+					<textarea class="form-control" id="Textarea" rows="4" placeholder="Escreva de forma resumida"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Nível Acadêmico que pretende dar continuidade?</label>
+				<div class="radio">
+					<label for="InputLevelAcademic1">
+					<input type="radio" id="InputLevelAcademic1" value="superior" name="nivelAcademico">
+					Ensino Superior/Universitário</label>
+				</div>
+				<div class="radio">
+					<label for="InputLevelAcademic2">
+					<input type="radio" id="InputLevelAcademic2" value="medio" name="nivelAcademico">
+					Ensino Médio</label>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-12">
+					<label for="InputCourses">Qual Curso pretende fazer?</label>
+					<select name="cursos" id="InputCourses" class="form-control">
+						<option value="" selected="selected">Selecione o Curso</option>
+						<option value="Agronomia">Agronomia</option>
+						<option value="Arquitetura e Urbanismo">Arquitetura e Urbanismo</option>
+						<option value="Ciências Contábeis">Ciências Contábeis</option>
+						<option value="Ensino Médio">Ensino Médio</option>
+						<option value="Engenharia de Produção">Engenharia de Produção</option>
+						<option value="Engenharia Elétrica">Engenharia Elétrica</option>
+						<option value="Engenharia Eletrônica e Informática">Engenharia Eletrônica e Informática</option>
+						<option value="Engenharia Civil">Engenharia Civil</option>
+						<option value="Engenharia Mecânica">Engenharia Mecânica</option>
+						<option value="Engenharia da Computação">Engenharia da Computação</option>
+						<option value="Engenharia de Telecomunicações">Engenharia de Telecomunicações</option>
+						<option value="Medicina Geral">Medicina Geral</option>	
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-12">
+					<label for="InputEmail">Email</label>
+					<input type="email" name="email" class="form-control" id="InputEmail" placeholder="email@exemplo.com">
+				</div>				
+			</div>
+
+			<div class="form-row">	
+				<div class="form-group col-12">
+					<label for="InputTelephone">Telefone</label>
+					<input type="number" name="telefone" class="form-control" id="InputTelephone" placeholder="Insira o seu número de telefone">
+				</div>
+			</div>
+
+			<button type="submit" class="btn btn-primary"> Enviar</button>
+
+		</form>
+		
+	</div>
+
+	<!-- Contact Info -->
+	<div class="contact-info" id="contato">
+			<h2 class="text-dark">Contato</h2>
+			<p>Entre em contato conosco</p>
+			<div class="container">
+				<div class="row">
+					<div class="contact col-lg-4 col-12">
+						<h2 class="text-dark">FALE CONOSCO</h2>
+						<p class="text-center">Estrada Municipal Pastor Walter Boger, Quadra B, Lote 18, Piso Superior Residencial Jacarandá, Bairro: Lagoa Bonita, Engenheiro Coelho – SP, CEP 13165-000.</p>
+						<p>(+55) 19 3802-9256</p>
+						<p>atendimento@idsestudantes.org</p>
+						<!-- Button Escrever mensagem -->			
+					<button type="button" class="btn btn-primary btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
+					  ESCREVER MENSAGEM
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Entre em Contato</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+						        <form>
+						          	<div class="form-group">
+							            <input type="text" class="form-control" id="emitter-name" placeholder="Seu Nome">
+						          	</div>
+						          	<div class="form-group">
+							            <input type="email" class="form-control" id="emitter-email" placeholder="Seu Email">
+						          	</div>
+						          	<div class="form-group">
+							            <textarea class="form-control" rows="4" id="message-text" placeholder="Escreva sua Mensagem"></textarea>
+						          	</div>
+						        </form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+					        <button type="button" class="btn btn-primary">Salvar e Enviar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!--End Button Escrever mensagem -->
+					</div>
+
+					<div class="col-lg-4 col-12">
+						<div class="social-midia">
+							<a href="https://www.facebook.com/CANALIDS/" target="_blank"><img src="../dist/img/fb.png" class="img-midia"></a> 
+							<a href="https://www.instagram.com/canalids/" target="_blank"><img src="../dist/img/instagram.png" class="img-midia" target="_blank"></a>
+							<a href="https://www.linkedin.com/company/16170297/" target="_blank"><img src="../dist/img/linkedin.jpg" class="img-midia" style="width: 65px;"></a>
+						</div>
+					</div>
+
+					<div class="box-ids col-lg-4 col-12">
+                        <h2 class="text-dark" style="text-align: left;">O IDS</h2>
+                        <h5 class="contact-a"><a class="text-dark" href="../mensagemTutor.html">Mensagem do Patrono/Tutor</a></h5>
+                        <h5 class="contact-a"><a class="text-dark" href="../historiaIds.html">História</a></h5>
+                        <h5 class="contact-a"><a class="text-dark" href="../casaDeFerias.html">Casa de Férias</a></h5>
+                        <h5 class="contact-a"><a class="text-dark" href="../idsMundo.html">IDS no Mundo</a></h5>
+                        <h5 class="contact-a"><a class="text-dark" href="https://www.flickr.com/photos/idsestudantes/page1">Galeria de Fotos</a></h5>
+                        <h5 class="contact-a"><a class="text-dark" href="https://www.youtube.com/channel/UCAPm6CWLqlOoaDwEBUP444A/videos">Galeria de Videos</a></h5>
+                    </div>
+					<!-- img back to top-->
+					<div class="container ScrollTop">
+						<a href="#headerTop"><img src="../dist/img/arr.png" alt=""></a>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<!-- End Contact Info -->
+
+
+		<!-- footer -->
+		<footer class="text-light text-center">
+			<p class="footer-p">Todos os direitos reservados ao IDS - Copyright © 2019</p>
+			<p class="footer-p">Desenvolvido por <a href="https://www.linkedin.com/in/dikizeko-da-gra%C3%A7a-oliveira-346998162/">Dikezeko Oliveira</a></p>
+		</footer>
+
+	<!-- jquery and javascript -->
+	<script type="text/javascript" src="../dist/js/jquery.js"></script>
+	<script type="text/javascript" src="../dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		$( function(e){
+			$('nav li:nth-child(5)').click( function(e){
+				$('html,body').animate({scrollTop:$('#contato').offset().top}, 1000);
+			});
+
+			$('.ScrollTop  a').click( function(e){
+				$('html,body').animate({scrollTop:$('#headerTop').offset().top}, 1000);
+			});
+		});
+	</script>
+</body>
+</html>
